@@ -50,6 +50,7 @@ Vagrant.configure("2") do |config|
             "modifyvm", :id,
             "--vram", "256",                  # VRAM:256 (for full-screen mode)
             "--clipboard", "bidirectional",   # Sharing clipboard
+            "--accelerate3d", "on",
             "--draganddrop", "bidirectional" # Enable D&D
         ]
   end
