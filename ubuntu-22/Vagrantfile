@@ -74,6 +74,9 @@ Vagrant.configure("2") do |config|
     dpkg --add-architecture i386
     apt-get update
     apt-get install -y ubuntu-desktop libxft2:i386 libxext6:i386 libncurses5:i386 libstdc++6:i386
+    apt-get upgrade
+    apt-get install -y vim-gnome golang gccgo
+    apt-get install -y nasm make xorriso binutils gcc
   SHELL
 end
 
